@@ -1,0 +1,134 @@
+.container {
+    margin: 50px;
+}
+
+.trip-input {
+    width: 380px;
+}
+
+.row {
+    margin-bottom: 15px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+#destination {
+    position: relative;
+    left: 38px;
+}
+
+#track-btn {
+    width: 200px;
+    position: relative;
+    left: 129px;
+}
+
+#duration {
+    position: relative;
+    left: 57px;
+}
+
+#depart-time {
+    position: relative;
+    left: 9px;
+    padding: 10px;
+}
+
+.timerBtn {
+    height: 40px;
+    padding: 4px 18px;
+}
+
+#startBtn {
+    position: relative;
+    left: 100px;
+}
+
+#stopBtn {
+    position: relative;
+    left: 126px;
+}
+
+#arrival-time {
+    height: 50px;
+    width: 194px;
+    position: relative;
+    left: 35px;
+    padding: 10px;
+}
+
+.timerInput {
+    position: relative;
+    right: 20px;
+}
+
+.timerLbl {
+    position: relative;
+    top: 10px;
+}
+
+#form-wrapper {
+    position: relative;
+    left: 240px;
+}
+
+#mph-btn {
+    position: relative;
+    left: 353px;
+    bottom: 38px;
+}
+
+#timerContainer {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    margin: 20px auto;
+    min-height: 60px;
+    border-top: 0px;
+    position: relative;
+    top: 80px;
+    width: 440px;
+}
+
+.timer,
+.reset {
+    float: left;
+    width: 54%;
+    padding: 20px 0;
+    font-size: 24px;
+    text-align: center;
+    color: #000;
+    cursor: pointer
+}
+
+.reset {
+    color: #000;
+    width: 14.9%;
+}
+
+.timer {
+    border: 1px solid lightgrey;
+    padding: 10px;
+}
+
+.icon {
+    border-bottom: 1px solid lightgrey;
+    border-top: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;
+    padding: 16px;
+    position: relative;
+    bottom: 20px;
+}
+
+#timerStart {
+    right: 5px;
+}
+
+#timerPause {
+    right: 17px;
+}
+
+#timerReset {
+    right: 27px;
+}

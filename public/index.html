@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="timerContainer">
+        <div class="timer" onclick="startTimer()">00:00:00</div>
+        <div class="startTimer reset" onclick="startTimer()">
+            <i class="fas fa-play icon" id="timerStart"></i>
+        </div>
+        <div class="pauseTimer reset" onclick="pauseTimer()">
+            <i class="fas fa-pause icon" id="timerPause"></i>
+        </div>
+        <div class="resetTimer reset" onclick="resetTimer()">
+            <i class="fas fa-sync icon" id="timerReset"></i>
+        </div>
+    </div>
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-10 mx-auto" id="form-wrapper">
+                <form>
+                    <div class="form-group row">
+                        <div class="col-sm-6">
+                            <label for="currentLoc">Current Location</label>
+                            <input type="text" class="form-control formSize" id="currentLoc"
+                                value="5445 Boone Ave N New Hope, MN 55428">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-6">
+                            <label for="destination">Destination</label>
+                            <input type="text" class="form-control formSize" id="destination"
+                                value="2700 Blue Water Road Eagan,MN 55121">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-6">
+                            <label for="route">Example select</label>
+                            <select class="form-control formSize" id="route">
+                                <option>169-494</option>
+                                <option>169-62-55</option>
+                                <option selected="selected">100-494</option>
+                                <option>100-62-55</option>
+                                <!-- <option>GIVE OPTION TO ENTIRE NON-TYPICAL ROUTE</option> -->
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-6">
+                            <label for="mph-btn">Miles</label>
+                            <input type="text" class="form-control formSize" id="tripMiles">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-6">
+                            <label for="tripDuration">Trip Duration</label>
+                            <input type="text" id="tripDuration" class="form-control formSize">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-6">
+                            <label for="mph">MPH</label>
+                            <input type="text" id="mph" class="form-control formSize">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-6">
+                            <label for="current-time">Current Time</label>
+                            <input type="text" id="current-time" class="form-control formSize">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-6">
+                            <button id="form-submit-btn" class="btn btn-info">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/popper.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://getbootstrap.com/docs/4.1/assets/js/vendor/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script>
+</body>
+
+</html>
